@@ -12,18 +12,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-          child: Text(
-        "I'm Md Sarwar Jahan Sabit. I like to introduce myself as a computer nerd!",
-        style: TextStyle(
-          color: Colors.blue,
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
-          fontStyle: FontStyle.italic,
-        ),
-        textAlign: TextAlign.center,
-      )),
-    ));
+            backgroundColor: Colors.white,
+            body: Center(
+              child: Icon(
+                Icons.android,
+                color: Colors.green,
+                size: 200.0,
+              ),
+            )));
   }
 }
