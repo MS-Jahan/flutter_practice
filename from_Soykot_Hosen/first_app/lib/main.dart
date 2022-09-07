@@ -13,51 +13,51 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: Row(
+        body: Column(
           children: <Widget>[
-            Container(
-              child: Text(
-                "Container 1",
-                style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.blue,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.bold,
+            Expanded(
+              flex: 1,
+              child: Container(
+                child: Text(
+                  "1",
+                  style: TextStyle(
+                    fontSize: 36.0,
+                    color: Colors.white,
+                  ),
                 ),
+                color: Colors.green,
+                alignment: Alignment.center,
               ),
-              decoration: BoxDecoration(
-                color: Colors.pink,
-                shape: BoxShape.rectangle,
-              ),
-              //margin: EdgeInsets.all(50.0),
-              // padding: EdgeInsets.all(80.0),
-              alignment: Alignment.center,
-              height: 180.0,
-              width: 180.0,
             ),
-            SizedBox(width: 10.0),
-            Container(
-              child: Text(
-                "Container 2",
-                style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.blue,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.bold,
+            Expanded(
+              flex: 1,
+              child: Container(
+                child: Text(
+                  "2",
+                  style: TextStyle(
+                    fontSize: 36.0,
+                    color: Colors.white,
+                  ),
                 ),
+                color: Colors.red,
+                alignment: Alignment.center,
               ),
-              decoration: BoxDecoration(
-                color: Colors.pink,
-                shape: BoxShape.rectangle,
-              ),
-              //margin: EdgeInsets.all(50.0),
-              // padding: EdgeInsets.all(80.0),
-              alignment: Alignment.center,
-              height: 180.0,
-              width: 180.0,
             ),
-            SizedBox(height: 10.0),
-            // Container(
+            Expanded(
+              flex: 1,
+              child: Container(
+                child: Text(
+                  "3",
+                  style: TextStyle(
+                    fontSize: 36.0,
+                    color: Colors.white,
+                  ),
+                ),
+                color: Colors.green,
+                alignment: Alignment.center,
+              ),
+            ),
+
             //   child: Text(
             //     "Container 3",
             //     style: TextStyle(
@@ -78,7 +78,6 @@ class MyApp extends StatelessWidget {
             //   width: 180.0,
             // ),
           ],
-          mainAxisAlignment: MainAxisAlignment.start,
         ),
       ),
     );
